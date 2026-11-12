@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sap-stok"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2.3",
+    "numpy>=2.1",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["sap_stok"]
